@@ -1,0 +1,37 @@
+C101-C109	vehicle capacity 200
+C201-C208	vehicle capacity 700
+
+R101-R112	vehicle capacity 200
+R201-R211  	vehicle capacity 1000
+
+RC101-RC108	vehicle capacity 200
+RC201-RC208	vehicle capacity 1000
+
+***********************************************************
+
+regexp
+^( +)(\d+)( +)(\d+)\.(\d{2})( +)(\d+)\.(\d{2})( +)(\d+)\.(\d{2})( +)(\d+)\.(\d{2})( +)(\d+)\.(\d{2})( +)(\d+)\.(\d{2})(.*)$
+
+maschera di uscita
+$2\t$4.$5\t$7.$8\t$10.$11\t$13.$14\t$16.$17\t$19.$20
+
+***********************************************************
+Contenuto dei file dei problemi
+
+CUST NO.   XCOORD.   YCOORD.    DEMAND   READY TIME   DUE DATE   SERVICE TIME
+    1      35.00      35.00       0.00       0.00     230.00       0.00
+    2      41.00      49.00      10.00     161.00     171.00      10.00
+    3      35.00      17.00       7.00      50.00      60.00      10.00
+    4      55.00      45.00      13.00     116.00     126.00      10.00
+...
+    101      55.00      20.00      19.00     149.00     159.00      10.00
+Best	828.94	10
+Optimal	827.3	10    
+    
+********************************
+
+Fonte per i record
+http://www.sintef.no/Projectweb/TOP/Problems/VRPTW/Solomon-benchmark/100-customers/
+
+Fonte per i problemi
+http://web.cba.neu.edu/~msolomon/problems.htm
